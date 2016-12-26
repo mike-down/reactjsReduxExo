@@ -1,4 +1,4 @@
-#the First deliverable for the exercise giving by STERBLUE</br>
+#The First deliverable for the exercise giving by STERBLUE</br>
 Objective : editing the web app interface using "react inline styles",</br>
 
 => components/App.js : adding a title and some div markups to have a code more organised, centering the elements, changing the colors, adding borders.</br>
