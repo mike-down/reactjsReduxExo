@@ -9,13 +9,15 @@ const styles = {
   }
 }
 /**********************endStyle************************/
-const TodoList = ({ todos, onTodoClick }) => (
+const TodoList = ({ todos, onInvalidation, onValidation, onComfirmation}) => (
   <ul style={styles.centre}>
     {todos.map(todo =>
       <Todo
         key={todo.id}
         {...todo}
-        onClick={() => onTodoClick(todo.id)}
+        onClickinva={ ()=> onInvalidation(todo.id)}
+        onClickva={ ()=> onValidation(todo.id)}
+        onClickcomf={ ()=> onComfirmation(todo.id)}
       />
     )}
   </ul>
@@ -24,10 +26,14 @@ const TodoList = ({ todos, onTodoClick }) => (
 TodoList.propTypes = {
   todos: PropTypes.arrayOf(PropTypes.shape({
     id: PropTypes.number.isRequired,
-    completed: PropTypes.bool.isRequired,
+    comfirm: React.PropTypes.bool.isRequired,
+    valid: React.PropTypes.number.isRequired,
     text: PropTypes.string.isRequired
   }).isRequired).isRequired,
-  onTodoClick: PropTypes.func.isRequired
+  onInvalidation: PropTypes.func.isRequired,
+  onValidation: PropTypes.func.isRequired,
+  onComfirmation: PropTypes.func.isRequired
+
 }
 
 export default TodoList

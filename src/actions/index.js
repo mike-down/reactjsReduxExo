@@ -10,7 +10,18 @@ export const setVisibilityFilter = (filter) => ({
   filter
 })
 
-export const toggleTodo = (id) => ({
-  type: 'TOGGLE_TODO',
+export const invalid = (id) => {
+  console.log(id);
+  return {
+    type: 'INVALID',
+    id
+}}
+
+export const valid = (id) => ({
+  type: 'VALID',
+  id
+})
+export const comfirm = (id) => ({
+  type: 'COMFIRM',
   id
 })
