@@ -10,12 +10,13 @@
 #The Second deliverable for the exercise</br>
 <h3>Objective : changing the functionalities of the web app</h3></br>
 
-  <p>=>actions/index.js: adding action creators the 3 buttons validate, invalidate and comfirm.</p>
-  <p>=>components/Todo.js: adding 3 buttons validate, invalidate and comfirm, adding 5 props: valid as number(0 for possible stat,1 for valid stat, 2 for invalid stat), comfirm as a boolean , 3 function for the onclick function for each one of the buttons.</p>
-  <p>=>components/TodoList.js: linked the 3 functions with others functions that takes the "TodoId" as an argument</p>
-  <p>=>containers/visibleTodoList.js: rewrite the mapDispatchToProps function which is a function that it use to regroup all the action creators with there events.</p>
-  <p>=>reducers/todos.js : modify the reducers to execute the needed transformation when the action is detected. the reducer todo change the state of the todos objects, and the todos reducer create a new store object without altering the old stores object of the application.</p>
+  <p>=>actions/index.js: adding action creators for the 3 buttons validate, invalidate and confirm.</p>
+  <p>=>components/Todo.js: adding 3 buttons validate, invalidate and confirm, adding 5 props: valid as number(0 for possible state,1 for valid state, 2 for invalid state), confirm as a boolean , 3 function for the onclick function for each one of the buttons.</p>
+  <p>=>components/TodoList.js: linking the 3 functions with others functions that takes the "TodoId" as an argument</p>
+  <p>=>containers/visibleTodoList.js: rewrite the mapDispatchToProps function which is a function that is used to regroup all the action creators with their events.</p>
+  <p>=>reducers/todos.js : modify the reducers to execute the needed transformation when the action is detected. the reducer todo changes the state of the todos objects, and the todos reducer creates a new store object without altering the old stores object of the application.</p>
 
-#Conclution:
-<p>This is actually the first time I work with reactjs, redux freamwork and ES6/ES2015, I find some difficulty to understand the syntax of EX6, how it work and what's driving it, but with the help of some tutorials, I first start by learning how reactjs works then how to use it, especially "react inline styles" that I used for the first part of this exercise. After that I start working on understanding redux, and than I analyze the code of the application to find where I should modify it, I find it really hard at first to decide what to change but every things become clear to me after some time setting in front of the code and reading it again and again after that I know exactly there to make my editing.</p>
-<p>Finally, I really like the way redux works it's a special architecture and I new way of thinking the web apps, I really enjoy passing time working with it, and I can say the same things about reactjs. the JavaScript new syntax is really great, I love it, easy and quick ones you know it.</p>
+#Conclusion:
+<p>This is actually the first time I work with ReactJS, Redux Framework and ES6/ES2015.In fact, I found at first some difficulties to understand the syntax of EX6 and the way Redux works, but by following some tutorials, I started learning how ReactJS works and how to use it efficially, especially "React Inline Styles" that I used for the first part of this exercise. After that, I started working on Redux, and then I analyzed the code of the application to find the instructions that should be modified or added. It was hard  to decide the things to change but after a lot of perseverance and concentration while reading the code I knew what needed to be modified.Besides, my strong willing to integrate Sterblue kept me motivated to get the exercise done although I had courses the whole day at school, so I managed to do the work till the evening which kept me awake late at nights sometimes.
+</p>
+<p>Finally, I really liked the logic behind Redux as it follows a special architecture and a new whole way of thinking the web apps. Also, I enjoyed spending time working in this project and using ReactJS. Additionaly, The JavaScript new syntax is really great, I loved it because it makes coding easier, faster and friendly.</p>
