@@ -41,7 +41,7 @@ const Todo = ({onClickinva, onClickva, onClickcomf, comfirm, valid, text }) => (
    <button id="invalidbtn" onClick={onClickinva}
     style={Object.assign({},styles.btn,{display: (valid ===0 && comfirm !== true) ? 'initial' : 'none',})} >invalidate</button>
   <button id="comfirmbtn" onClick={onClickcomf}
-    style={Object.assign({},styles.btn,{display: (valid ===0 && comfirm === false)||(comfirm===true) ? 'none' : 'initial',})} >comfirm</button>
+    style={Object.assign({},styles.btn,{display: (valid ===0 && comfirm === false)||(comfirm===true) ? 'none' : 'initial',})} >confirm</button>
   </li>
 )
 
