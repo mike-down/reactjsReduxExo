@@ -37,9 +37,9 @@ const Todo = ({onClickinva, onClickva, onClickcomf, comfirm, valid, text }) => (
   <li style={styles.text} >
      <label style={Object.assign({},{textDecoration: valid ===2 ? 'line-through' : 'none'})}>{text}</label>
    <button id="validbtn" onClick={onClickva}
-     style={Object.assign({},styles.btn,{display: (valid ===0 && comfirm !== true) ? 'run-in' : 'none',})} >valid</button>
+     style={Object.assign({},styles.btn,{display: (valid ===0 && comfirm !== true) ? 'initial' : 'none',})} >validate</button>
    <button id="invalidbtn" onClick={onClickinva}
-    style={Object.assign({},styles.btn,{display: (valid ===0 && comfirm !== true) ? 'run-in' : 'none',})} >invalid</button>
+    style={Object.assign({},styles.btn,{display: (valid ===0 && comfirm !== true) ? 'initial' : 'none',})} >invalidate</button>
   <button id="comfirmbtn" onClick={onClickcomf}
     style={Object.assign({},styles.btn,{display: (valid ===0 && comfirm === false)||(comfirm===true) ? 'none' : 'initial',})} >comfirm</button>
   </li>
@@ -49,8 +49,8 @@ Todo.propTypes = {
   onClickinva: PropTypes.func.isRequired,
   onClickva: PropTypes.func.isRequired,
   onClickcomf: PropTypes.func.isRequired,
-  comfirm: React.PropTypes.bool.isRequired, // false = new, true = comfirmed
-  valid: React.PropTypes.number.isRequired, // 0 = new, 1 = valide, 2 = invalide
+  comfirm: React.PropTypes.bool.isRequired, // false = possible, true = comfirmed
+  valid: React.PropTypes.number.isRequired, // 0 = possible, 1 = valide, 2 = invalide
   text: PropTypes.string.isRequired
 }
 

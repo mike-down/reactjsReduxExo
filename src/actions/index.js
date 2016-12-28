@@ -11,7 +11,7 @@ export const setVisibilityFilter = (filter) => ({
 })
 
 export const invalid = (id) => {
-  console.log(id);
+  // console.log(id);
   return {
     type: 'INVALID',
     id

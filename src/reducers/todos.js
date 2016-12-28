@@ -1,16 +1,16 @@
 import undoable, { distinctState } from 'redux-undo'
 
 const todo = (state, action) => {
-  console.log(action.type);
-  console.log(state);
+  // console.log(action.type);
+  // console.log(state);
   switch (action.type) {
     case 'ADD_TODO':
-      console.log({
-        id: action.id,
-        text: action.text,
-        valid: 0,
-        comfirm : false
-      })
+      // console.log({
+      //   id: action.id,
+      //   text: action.text,
+      //   valid: 0,
+      //   comfirm : false
+      // })
       return {
         id: action.id,
         text: action.text,
@@ -21,10 +21,10 @@ const todo = (state, action) => {
       if (state.id !== action.id) {
         return state
       }
-      console.log({
-        ...state,
-        valid:2
-      })
+      // console.log({
+      //   ...state,
+      //   valid:2
+      // })
       return {
         ...state,
         valid:2
@@ -33,10 +33,10 @@ const todo = (state, action) => {
         if (state.id !== action.id) {
           return state
         }
-        console.log({
-          ...state,
-          valid:1
-        })
+        // console.log({
+        //   ...state,
+        //   valid:1
+        // })
         return {
           ...state,
           valid:1
@@ -45,10 +45,10 @@ const todo = (state, action) => {
           if (state.id !== action.id) {
             return state
           }
-          console.log({
-            ...state,
-            comfirm:!state.comfirm
-          })
+          // console.log({
+          //   ...state,
+          //   comfirm:!state.comfirm
+          // })
           return {
             ...state,
             comfirm:!state.comfirm

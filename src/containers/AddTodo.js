@@ -57,7 +57,7 @@ let AddTodo = ({ dispatch }) => {
         input.value = ''
       }}>
         <div style={styles.centre}>
-            <input placeholder="What's your Plan Master ?" style={styles.inputStyle} ref={node => {
+            <input placeholder="Any possible defect ?" style={styles.inputStyle} ref={node => {
               input = node
             }} />
           <button id='submitbtn' onMouseEnter={function(){
