@@ -1,4 +1,4 @@
-#The First deliverable for the exercise in 5 days</br>
+# The First deliverable for the exercise in 5 days</br>
 <h3>Objective : editing the web app interface using "react inline styles",</h3></br>
 
   <p>=> components/App.js : adding a title and some div markups to have a code more organised, centering the elements, changing the colors, adding borders.</p>
